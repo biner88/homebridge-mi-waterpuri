@@ -1,6 +1,6 @@
 {
   "name": "homebridge-mi-waterpuri",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mi WaterPurifier plugin for homebridge: https://github.com/nfarina/homebridge",
   "main": "index.js",
   "dependencies": {

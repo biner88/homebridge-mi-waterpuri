@@ -26,7 +26,12 @@ npm install -g miio homebridge-mi-waterpuri
         "type": "MiWaterPurifier",
         "ip": "192.168.31.x",
         "token": "xxxxxxxxxxxxxxxxxxx",
-        "Name": "Water TDS"
+        "FilteredWaterQuality": "Filtration water quality",
+        "TapWaterQuality": "Tap water quality",
+        "PpCottonFilterRemaining": "PP cottonfilter remaining",
+        "FrontActiveCarbonFilterRemaining": "Front active Carbonfilter remaining",
+        "RoFilterRemaining": "Ro Filter Remaining",
+        "RearActiveCarbonFilterRemaining": "Rear active carbonFilter remaining"
     }]
 }]
 ```
