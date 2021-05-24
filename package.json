@@ -1,40 +1,34 @@
 {
-  "_from": "homebridge-mi-water-purifier@latest",
-  "_id": "homebridge-mi-water-purifier@0.0.1",
-  "_inBundle": false,
-  "_integrity": "sha512-LkNwA0btPE3srRaarPNXmMFcdwcwFDY3D9qcZWZNtwfLxXJ77rCMBXhdZbCDSTy2fzdUkPTMp+7hKgES+9R25A==",
-  "_location": "/homebridge-mi-water-purifier",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "homebridge-mi-water-purifier@latest",
-    "name": "homebridge-mi-water-purifier",
-    "escapedName": "homebridge-mi-water-purifier",
-    "rawSpec": "latest",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/homebridge-mi-water-purifier/-/homebridge-mi-water-purifier-0.0.1.tgz",
-  "_shasum": "95d39dc7a6cbb0aeb8ef1344eec14991771ea297",
-  "_spec": "homebridge-mi-water-purifier@latest",
-  "_where": "/homebridge",
-  "bugs": {
-    "url": "https://github.com/Zzm317/homebridge-mi-water-purifier/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "homebridge-mi-waterpuri",
+  "version": "1.0.1",
   "description": "Mi WaterPurifier plugin for homebridge: https://github.com/nfarina/homebridge",
-  "engines": {
-    "homebridge": ">=0.4.0",
-    "node": ">=0.12.0"
-  },
+  "main": "index.js",
   "dependencies": {
-    "miio": "0.14.1"
+    "ansi-regex": "^2.1.1",
+    "ansi-styles": "^2.2.1",
+    "appdirectory": "^0.1.0",
+    "chalk": "^1.1.3",
+    "debug": "^2.6.9",
+    "escape-string-regexp": "^1.0.5",
+    "has-ansi": "^2.0.0",
+    "miio": "^0.14.1",
+    "minimist": "^1.2.5",
+    "ms": "^2.0.0",
+    "mkdirp": "^0.5.5",
+    "strip-ansi": "^3.0.1",
+    "supports-color": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biner88/homebridge-mi-waterpuri.git"
+  },
+  "engines": {
+    "homebridge": ">=0.4.1",
+    "node": ">=7.0.0"
   },
   "keywords": [
     "homebridge-plugin",
@@ -42,13 +36,12 @@
     "mi",
     "water",
     "purifier",
-    "water-purifier"
+    "waterpuri"
   ],
+  "author": "teenagex",
   "license": "GPLV3",
-  "name": "homebridge-mi-water-purifier",
-  "repository": {
-    "type": "git",
-    "url": "git://https://github.com/Zzm317/homebridge-mi-water-purifier.git"
+  "bugs": {
+    "url": "https://github.com/biner88/homebridge-mi-waterpuri/issues"
   },
-  "version": "0.0.1"
+  "homepage": "https://github.com/biner88/homebridge-mi-waterpuri#readme"
 }
