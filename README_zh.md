@@ -1,12 +1,12 @@
 # homebridge-mi-waterpuri
 
-MiWaterPurifier for homebridge
+小米净水器homebridge插件
 
-[简体中文说明](README_zh.md)
+[English](README.md)
 
-The following models of water purifiers may be supported
+可能支持以下型号的净水器
 
-| Model| Name| Test| 
+| 型号 | 名字 | 通过测试 | 
 | :--- | :---: | :---: | 
 | yunmi.waterpurifier.v1| Mi Water Purifier v1 | [ ] |
 | yunmi.waterpurifier.v2| Mi Water Purifier v2 | [ ] |
@@ -24,21 +24,21 @@ The following models of water purifiers may be supported
 | yunmi.waterpuri.lx11| Mi Water Purifier C1 (Triple Setting) | [ ] |
 | yunmi.waterpuri.lx12| Mi Water Purifier S1 | [ ] |
 
-## TDS shows in LightSensor.(No accessory available for water purifier)
+## 因为没有对应的配件，暂时使用光线感应器来替代
 
-## Installation
+## 安装
 
-1. Install HomeBridge, please follow it's [README](https://github.com/nfarina/homebridge/blob/master/README.md).   
-If you are using Raspberry Pi, please read [Running-HomeBridge-on-a-Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi).   
-2. Make sure you can see HomeBridge in your iOS devices, if not, please go back to step 1.   
-3. Install packages.   
-4. Get ip and token, please install this version of Mijia [link](https://www.kapiba.ru/2017/11/mi-home.html)
+1. 请按照[README](https://github.com/nfarina/homebridge/blob/master/README.md). 安装  HomeBridge。 
+如果你用的是树莓派，请参考这个 [Running-HomeBridge-on-a-Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi).   
+2. 请确保您可以在iOS设备中看到HomeBridge，如果没有，请检查步骤1。  
+3. 安装软件包。
+4. 获取ip和token，请安装这个版本的米家 [link](https://www.kapiba.ru/2017/11/mi-home.html)
 
 ```
 npm install -g miio homebridge-mi-waterpuri
 ```
 
-## Configuration
+## 配置
 
 ```
 "platforms": [{
@@ -47,17 +47,17 @@ npm install -g miio homebridge-mi-waterpuri
         "type": "MiWaterPurifier",
         "ip": "192.168.31.x",
         "token": "xxxxxxxxxxxxxxxxxxx",
-        "FilteredWaterQuality": "TDS OUT",
-        "TapWaterQuality": "TDS IN",
-        "PpCottonFilterRemaining": "PP cottonfilter remaining",
-        "FrontActiveCarbonFilterRemaining": "Front active Carbonfilter remaining",
-        "RoFilterRemaining": "Ro Filter Remaining",
-        "RearActiveCarbonFilterRemaining": "Rear active carbonFilter remaining"
+        "FilteredWaterQuality": "过滤后水质",
+        "TapWaterQuality": "自来水水质",
+        "PpCottonFilterRemaining": "PP棉滤芯剩余天数",
+        "FrontActiveCarbonFilterRemaining": "前置活性炭滤芯剩余天数",
+        "RoFilterRemaining": "RO反渗透滤芯剩余天数",
+        "RearActiveCarbonFilterRemaining": "后置活性炭滤芯剩余天数"
     }]
 }]
 ```
 
-If you don't want to display an item, please delete the configuration item or leave the value blank, such as displaying only the TDS of inlet and outlet water
+如果你不想显示某个项目，请删除该配置项或者把值留空白，比如只显示进水和出水的TDS
 
 ```
 "platforms": [{
@@ -66,8 +66,8 @@ If you don't want to display an item, please delete the configuration item or le
         "type": "MiWaterPurifier",
         "ip": "192.168.31.x",
         "token": "xxxxxxxxxxxxxxxxxxx",
-        "FilteredWaterQuality": "TDS OUT",
-        "TapWaterQuality": "TDS IN"
+        "FilteredWaterQuality": "过滤后水质",
+        "TapWaterQuality": "自来水水质"
     }]
 }]
 ```
