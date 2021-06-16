@@ -15,7 +15,7 @@
 | yunmi.waterpuri.lx2| Mi Water Purifier lx2 | [ ] |
 | yunmi.waterpuri.lx3| Mi Water Purifier (Under Counter) | [x] |
 | yunmi.waterpuri.lx4| Mi Water Purifier lx4 | [ ] |
-| yunmi.waterpuri.lx5| Mi Water Purifier 1A/400G Pro | [ ] |
+| yunmi.waterpuri.lx5| Mi Water Purifier 1A/400G Pro | [x] |
 | yunmi.waterpuri.lx6| Mi Water Purifier (Under Counter) | [ ] |
 | yunmi.waterpuri.lx7| Mi Water Purifier 500G/500G Pro | [ ] |
 | yunmi.waterpuri.lx8| Mi Water Purifier 600G | [ ] |
